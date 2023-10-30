@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+.imagen{
+    max-width: 30px;
+    border-radius: 10%;
+}
+
+.imagen:hover {
+    transform: scale(1.5);
+    transition: .25s;
+    
+}
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna1 {
+    width: 35%; /* Establece el ancho de las columnas */
+    padding: 0 1%; /* Añade un pequeño espacio entre las columnas */
+}
+.columna2 {
+    width: 60%; /* Establece el ancho de las columnas */
+    padding: 0 1%; /* Añade un pequeño espacio entre las columnas */
+}
+
+.botonSemana {
+    position: fixed;
+    top: 0; /* Fija la sección en la parte superior */
+    left: 0; /* Fija la sección en la parte izquierda */
+    z-index: 999; /* Asegura que la sección esté en la capa superior */
+    background-color: #010C25; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px 40px;
+    margin-top: 0px;
+    width: 100%; /* Establece el ancho de la sección */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Righteous';
+    border:2px dashed #05cfee;
+}
+
+.botonSemana a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: #1CB698;
+    border: none;
+
+}
+
+
+.botonRegresar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.botonSemana a:hover{
+    background: #05cfee;
+    color: #000;
+    transition: .3s;
+} 
+
+.tablacontenido{ 
+    color: #000;
+    padding: 30px 30px;
+    position: relative;
+    background-color: #010C25;
+    margin-top: 60px;
+}
+
+.tablacontenido .contenido-seccion{
+    max-width: auto;
+    margin: auto;  
+    
+}
+
+
+.tablacontenido h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 5px 0;
+    text-shadow: 2px 2px 12px #1CB698, -6px -6px 12px #05cfee;
+
+}
+
+.tablacontenido ul{
+    padding: 0px;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablacontenido h3{
+    font-size: 38px;
+    font-family: 'Righteous';
+    margin: 25px;
+    text-align: center;
+    border: 1px solid #05cfee;
+    border-radius: 15px;
+}
+
+.tablacontenido  h4{
+    color: #05cfee;
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+.tablacontenido .Semana{
+    color: #1CB698;
+    font-size: 38px;
+    font-weight: bold;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+.tablacontenido .semana1, .semana2, .semana3, .semana4, .semana5, .semana6, .semana7{
+    border: 1px solid #05cfee;
+    margin-top: 35px;
+    border-radius: 15px;
+    padding: 0 10px 10px 20px;
+    position: relative;
+    background-color: #0a1128;
+    box-shadow: 0 0 10px #1CB698;
+    transition: .3s;
+
+}
+.tablacontenido  p{
+    line-height: 24px;
+}
+
+.tablacontenido  p span{
+    font-weight: bold;
+}
+
+.tablacontenido::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px; /* Altura del separador */
+    background: linear-gradient(to right, #1CB698, transparent); /* Cambia los colores según tus preferencias */
+    z-index: 1;
+}
+
+.tablacontenido::after {
+    content: "";
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia entre las olas */
+    left: 0;
+    width: 100%;
+    height: 20px; /* Altura del separador */
+    background: linear-gradient(to right, transparent, #1CB698); /* Cambia los colores según tus preferencias */
+    z-index: 1;
+}
+
+@media screen and (max-width:700px) {
+    .columnas {
+        flex-direction: column; /* Cambia la dirección de las columnas a una sola columna */
+    }
+
+    .columna1, .columna2 {
+        width: 100%; /* Establece el ancho al 100% para ocupar toda la pantalla */
+        padding: 0; /* Elimina el espacio entre las columnas */
+    }
+    
+ } 
+
+ footer{
+    display: flex;
+     background-color: #21c798;
+     color: #fff;
+     padding: 50px 0 30px 0;
+     text-align: center;
+     position: relative;
+     width: 100%;
+     justify-content: center;
+     padding: 20px 50px;
+     height: 100%;
+     flex-direction: column;
+ }
+ 
+ footer .wave#wave1 {
+     z-index: 1000;
+     opacity: 1;
+     bottom: 0;
+     animation: animateWave 4s linear infinite;
+ }
+ 
+ footer .redes{
+     margin-bottom: 20px;
+ }
+ footer .redes a {
+     color: #fff;
+     display: inline-block;
+     text-decoration: none;
+     border: 1px solid #fff;
+     border-radius: 100%;
+     width: 42px;
+     height: 42px;
+     line-height: 42px;
+     margin: 40px 5px;
+     font-size: 20px;
+     transition: .3s;
+ }
+ footer .arriba{
+     display: block;
+     width: 50px;
+     height: 50px;
+     background-color: #1CB698;
+     color: #fff;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     top: -25px;
+     border-radius: 50%;
+     line-height: 50px;
+     font-size: 18px;
+ }

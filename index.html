@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio OsorioJc</title>
+    <link rel="shortcut icon" href="/PORTAFOLIO/0001/img/icono-07.png">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="particles.js"></script>
+</head>
+<body>
+
+    <!-- MENU ENCABEZADO -->
+    <section class="contenedor-header">
+        <header>
+            <div id="nav-logo" class="logo">
+                <img src="img/iconoJc-01.png" alt="">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#portada" onclick="seleccionar()">PORTADA</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INTRODUCIÓN</a></li>
+                    <li><a href="#tablacontenido" onclick="seleccionar()">TABALA DE CONTENIDO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">TRABAJOS REALIZADOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </section>
+
+    <!-- SECCION PORTADA -->
+    <section id="portada" class="portada">
+        <div id="particles-js" class="particles-container"></div>
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/im-02.jpg" alt="">
+                </div>
+                <h1>PORTFOLIO ELECTRÓNICO</h1>
+                <h2>DESARROLLO DE APLICACIONES WEB</h2>
+            </div>
+    </section>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+               
+        <div class="contenido-intro">
+            <h1>BIENVENIDO A MI INTRODUCIÓN</h1>
+            <P> Soy Osorio Cayetano José Jhunior, un estudiante de Ingeniería de Sistemas en el noveno semestre en la Universidad Nacional del Centro del Perú. Me complace presentarte una visión general de mi portafolio digital. A lo largo de mi trayecto académico en esta prestigiosa institución, he acumulado una amplia gama de conocimientos y habilidades en el campo de la ingeniería de sistemas, y este portafolio es una ventana a mi viaje educativo y profesional.
+                
+                Aquí, encontrarás una muestra de las actividades semanales, informaciónsobre mi, habilidades que he acumulado hasta ahora en mi aprendizaje personal. Cada elemento de este portafolio representa no solo mi dedicación y esfuerzo, sino también mi pasión por la ingeniería de sistemas y mi compromiso con el aprendizaje continuo.
+                
+                A través de estas páginas, espero que puedas conocer más sobre mi perfil, mis logros y mi visión hacia el futuro en este emocionante campo de la tecnología. Siéntete libre de explorar y descubrir las actividades desarrolladas en el curso de Desarrollo de Aplicaciones Web.
+                
+                Espero que disfrutes explorando mi portafolio tanto como yo disfruté creándolo. ¡Gracias por visitar y ser parte de mi viaje académico y profesional en la ingeniería de sistemas en la Universidad Nacional del Centro del Perú!</P>
+        </div>
+        <div class="contenido-banner">
+            
+            <h1>OSORIO CAYETANO</h1>
+            <div class="contenedor-img">
+                <img src="img/hero-01.png" alt="">
+            </div>
+            <h1>José Jhunior </h1>
+            <h2>Ingeniero de Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100089375895260&mibextid=b06tZ0"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/OsorioJc-696"><i class="fa-brands fa-github"></i>
+                <a href="https://myaccount.microsoft.com/?ref=MeControl"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="https://www.linkedin.com/in/jose-jhunior-osorio-cayetano-38335928a"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>   
+        </div>
+    </section>
+
+    <!-- TABLA DE CONTENIDO -->
+    <section id="tablacontenido" class="tablacontenido">
+        <div class="contenido-seccion">
+            <h2>Tabla de Contenido</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Unidad 1</h3>
+                    <div class="item izq">
+                        <div id="semana1" class="semana1">
+                            <span class="Semana">Semana 1: </span>
+                            <ul>
+                                <li>Lenguaje Marcado de Hipertexto (HTML) y Lenguaje Marcado Extensible (XML).</li>
+                                <li>Estándar Open Web Platform y su relevancia en el desarrollo web.</li>
+                                <li>Estructura de documentos HTML y XML: elementos y etiquetas principales.</li>
+                                <li>El Árbol DOM (Document Object Model) y cómo representa la estructura de una página web.</li>
+                                <li>Proceso de renderizado del Árbol DOM y su impacto en la visualización web.</li>
+                                <li>Ciclo de Vida de una Página Web: desde la solicitud hasta la presentación al usuario.</li>
+                                <li>Estrategias de optimización en motores de búsqueda (SEO) para mejorar la visibilidad en línea.</li>
+                                <li>Asegurando la compatibilidad entre navegadores para una experiencia de usuario uniforme.</li>
+                                <li>Uso de hojas de estilos estándar CSS3 para el diseño web.</li>
+                
+                            </ul>
+                        
+                            <div id="botonSemana" class="botonSemana">
+                                <a href="/PORTAFOLIO/0001/semana.html#semana1">
+                                    <button id="botonVerMas" class="botonVerMas">
+                                        Ver más
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <div id="semana2" class="semana2">
+                            <span class="Semana">Semana 2: </span>
+                            <ul>
+                                <li>Lenguaje Marcado de Hipertexto (HTML) y Lenguaje Marcado Extensible (XML).</li>
+                                <li>Estándar Open Web Platform y su relevancia en el desarrollo web.</li>
+                                <li>Estructura de documentos HTML y XML: elementos y etiquetas principales.</li>
+                                <li>El Árbol DOM (Document Object Model) y cómo representa la estructura de una página web.</li>
+                                <li>Proceso de renderizado del Árbol DOM y su impacto en la visualización web.</li>
+                                <li>Ciclo de Vida de una Página Web: desde la solicitud hasta la presentación al usuario.</li>
+                                <li>Estrategias de optimización en motores de búsqueda (SEO) para mejorar la visibilidad en línea.</li>
+                                <li>Asegurando la compatibilidad entre navegadores para una experiencia de usuario uniforme.</li>
+                                <li>Uso de hojas de estilos estándar CSS3 para el diseño web.</li>
+                
+                            </ul>
+                        
+                            <div id="botonSemana" class="botonSemana">
+                                <a href="/PORTAFOLIO/0001/semana.html#semana2">
+                                    <button id="botonVerMas" class="botonVerMas">
+                                        Ver más
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <div id="semana3" class="semana3">
+                            <span class="Semana">Semana 3: </span>
+                            <ul>
+                                <li>Librerías CSS Front-end</li>
+                                <li>Diseño de Tipografpia</li>
+                                <li>Layout y Components</li>
+                                <li>Flexbox y diseño Responsivo</li>
+                               <li>Componentes de Interfaz de Usuario</li>
+                            </ul>
+                        
+                            <div id="botonSemana" class="botonSemana">
+                                <a href="/PORTAFOLIO/0001/semana.html#semana3">
+                                    <button id="botonVerMas" class="botonVerMas">
+                                        Ver más
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <div id="semana4" class="semana4">
+                            <span class="Semana">Semana 4: </span>
+                            <ul>
+                                <li>Desarrolo Front-End con JavaScript</li>
+                                <li>Motores JavaScript, Variables y Operadores</li>
+                                <li>Tipos de Datos: Números, Strings, Objetos, Booleanos y otros</li>
+                                <li>Estructuras de Control y Bucles</li>
+                               <li>Funciones en Javascript: Sintaxis, Invocación y Tipos</li>
+                               <li>Funciones Anónimas, Función Objeto y Funciones Flecha</li>
+                               <li>Funciones Auto Invocadas y Funciones Closures</li>
+                               <li>Clases Number, String y Math en Javascript</li>
+                               <li>Trabajo con Arrays Unidimensionales y Multidimensionales</li>
+                               <li>Utilización de Objetos Map en Javascript</li>
+                            </ul>
+                        
+                            <div id="botonSemana" class="botonSemana">
+                                <a href="/PORTAFOLIO/0001/semana.html#semana4">
+                                    <button id="botonVerMas" class="botonVerMas">
+                                        Ver más
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <div id="semana5" class="semana5">
+                            <span class="Semana">Semana 5: </span>
+                            <ul>
+                                <li>Desarrollo FrontEnd con Framework JS</li>
+                                <li>Estructura y operación de Framework con representación del lado del cliente</li>
+                                <li>Gestión de dependencias y herramientas de creación de proyectos</li>
+                                <li>Desarrollo basado en componentes utilizando JSX, PROPS y CHILDREN</li>
+                               <li>Utilización de estilos en el Framework JS</li>
+                               <li>Enfoques de estilos, incluyendo estilos inline, hojas de estilo, módulos de estilos y estilos de componentes</li>
+                               <li>Laboratorio 05A: Pasar datos con props y children y mostrar en un componente hijo</li>
+                            </ul>
+                        
+                            <div id="botonSemana" class="botonSemana">
+                                <a href="/PORTAFOLIO/0001/semana.html#semana5">
+                                    <button id="botonVerMas" class="botonVerMas">
+                                        Ver más
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <div id="semana6" class="semana6">
+                            <span class="Semana">Semana 6: </span>
+                            <ul>
+                                <li>Desarrollo de aplicaciones con Eventos, Condicionales y Bucles en Framework JS</li>
+                                <li>Implementación de Eventos y Renderizado condicional/iterativo en aplicaciones web</li>
+                                <li>Uso de Formularios y enrutamiento para mejorar la experiencia del usuario</li>
+                                <li>Consumo de APIs para obtener datos externos</li>
+                               <li>Aplicación de conceptos de Promesas y Async/await en la obtención de datos de una API</li>
+                               <li>Exploración de la librería Axios para facilitar la comunicación con servidores externos</li>
+                            </ul>
+                        
+                            <div id="botonSemana" class="botonSemana">
+                                <a href="/PORTAFOLIO/0001/semana.html#semana6">
+                                    <button id="botonVerMas" class="botonVerMas">
+                                        Ver más
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <div id="semana7" class="semana7">
+                            <span class="Semana">Semana 7: </span>
+                            <ul>
+                               <li>Enfoque en el uso de Hooks en React.</li>
+                               <li>Exploración de los Hooks predefinidos, como `useState`, `useEffect`, `useContext`, `useRef`, `useReducer`, `useCallback`, y `useMemo`</li>
+                               <li>Creación y aplicación de Hooks personalizados</li>
+                               <li>valuación de habilidades en el Laboratorio 09 como parte de la Evaluación de Logro 01</li>
+                            </ul>
+                        
+                            <div id="botonSemana" class="botonSemana">
+                                <a href="/PORTAFOLIO/0001/semana.html#semana7">
+                                    <button id="botonVerMas" class="botonVerMas">
+                                        Ver más
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Unidad 2</h3>
+
+                    <div class="item der">
+                        <span class="Semana">Semana 8</span>
+                        <p>
+                            * ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <span class="Semana">Semana 9</span>
+                        <p>
+                            * ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="Semana">Semana 10</span>
+                        <p>
+                            * ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="Semana">Semana 11</span>
+                        <p>
+                            * ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="Semana">Semana 12</span>
+                        <p>
+                            * ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="Semana">Semana 13</span>
+                        <p>
+                            * ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="Semana">Semana 14</span>
+                        
+                        <p>
+                            * ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            <br>* ---------------------------
+                            
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>información Sobre Mí</h2>
+            <p><span>Hola, soy OSORIO CAYETANO <span>José Jhunior.</span></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            09-07-1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            918405247
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            e_2019200661k@uncp.edu.pe
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Psje. Fidel coz 191 Huancayo, Perú
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>ESTUDIANTE</span>
+                        </li>
+                        <li>
+                            <strong>Carrera</strong>
+                            Ingeniería de Sistemas
+                        </li>
+                        <li>
+                            <strong>Semestre</strong>
+                            9no ciclo
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <section id="skills" class="skills" >
+         <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- HABILIDADES TÉCNICAS -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- HABILIDADES PROFECIONALES -->
+                <div class="col">
+                    <h3>Habilidades Profecionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>72%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>64%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestión de Proyecto</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>TABAJOS REALIZADOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Trabajo</h3>
+                        <p>N° 1</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Trabajo</h3>
+                        <p>N° 2</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Trabajo</h3>
+                        <p>N° 3</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Trabajo</h3>
+                        <p>N° 4</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Trabajo</h3>
+                        <p>N° 5</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Trabajo</h3>
+                        <p>N° 6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- CONCLUSIÓN -->
+    
+
+    <!-- REFLEXIÓN -->
+    <section id="reflexion" class="reflexion">
+        <div class="contenido-seccion">
+            <h2>Reflexiones semenales</h2>
+            <div class="fila-reflex">
+                <div class="Col izquierdo">
+                    <h3>Unidad 1</h3>
+                    <div class="item izq">
+                        <div id="semana1" class="semana1">
+                        <span class="Comentario">Semana 1: </span>
+                        <p>
+                            Obtuve habilidades sólidas en la implementación de Hooks durante el Laboratorio 01A, donde exploraron los cimientos esenciales de las tecnologías web y el funcionamiento de Internet. Fuí capaz de comprender la trascendental importancia del Sistema de Nombres de Dominio (DNS) y su rol en la traducción de nombres a direcciones IP. Además, adquirí conocimientos sobre el funcionamiento de los protocolos TCP/IP y HTTP, los cuales son vitales para la comunicación en la red. 
+                            <br><br>Adicionalmente, me familiariceé con los frameworks y las herramientas de atajos (como Emmet y los snippets) en VSCode, reconociéndolos como recursos poderosos que tienen el potencial de optimizar significativamente la velocidad, la eficiencia y la calidad en el desarrollo web. Los frameworks brindan estructura y funcionalidad, mientras que las utilidades de atajos y snippets simplifican la creación de código y reducen la labor repetitiva. La elección de las herramientas adecuadas depende tanto de las preferencias individuales como de los requerimientos específicos del proyecto.
+                        </p>
+                        </div>
+                        <div id="botonReflexion" class="botonReflexion">
+                            <a href="/PORTAFOLIO/0001/reflexion.html#semana1">
+                                <button id="botonVerMas" class="botonVerMas">
+                                    Ver más >>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <div id="semana2" class="semana2">
+                        <span class="Comentario">Semana 2: </span>
+                        <p>
+                            Durante la semana pasada, me sumergí en los conceptos esenciales relacionados con la creación de sitios web utilizando HTML, XML y CSS, y también exploré las prácticas recomendadas en el ámbito de la Plataforma Web Abierta. A lo largo de esta experiencia, llegué a comprender en detalle cómo funcionaba la estructura de un sitio web. 
+                            <br><br>Desde la creación de etiquetas HTML5 hasta la optimización para motores de búsqueda, pude apreciar la importancia de estos aspectos. El conocimiento sobre el Árbol DOM y el ciclo de vida de una página web se volvió claro, ya que tienen un impacto directo en la experiencia del usuario. Además, adquirí información sobre la importancia de asegurarse de que un sitio web funcione correctamente en diversos navegadores y entornos.
+                        </p>
+                    </div>
+                    <div id="botonReflexion" class="botonReflexion">
+                        <a href="/PORTAFOLIO/0001/reflexion.html#semana2">
+                            <button id="botonVerMas" class="botonVerMas">
+                                Ver más >>
+                            </button>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="item izq">
+                        <div id="semana3" class="semana3">
+                        <span class="Comentario">Semana 3: </span>
+                        <p>
+                            A lo largo del curso, experimenté un enriquecedor proceso de aprendizaje al desarrollar páginas web Front-End con librerías de CSS como Bootstrap y Tailwind. 
+                            <br>Adquirí una comprensión más profunda de cómo diseñar interfaces de usuario atractivas y funcionales. 
+                            <br>Me llamó mucho la atención el desarrollo web a través de esto, que iré profundianzado para emplear en proyectos futuros.
+                        </p>
+                    </div>
+                    <div id="botonReflexion" class="botonReflexion">
+                        <a href="/PORTAFOLIO/0001/reflexion.html#semana3">
+                            <button id="botonVerMas" class="botonVerMas">
+                                Ver más >>
+                            </button>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="item izq">
+                        <div id="semana4" class="semana4">
+                        <span class="Comentario">Semana 4: </span>
+                        <p>
+                            Tras mi aprendizaje acerca del desarrollo Front-End con Javascript, he llegado a la conclusión de que este proceso ha sido altamente enriquecedor. He adquirido un profundo conocimiento sobre la versatilidad y potencia de este lenguaje de programación. Comprender los motores de Javascript, las variables y operadores, así como la manipulación efectiva de datos, me ha proporcionado una base sólida para el desarrollo Front-End. Además, el manejo de tipos de datos como números, strings y objetos ha ampliado considerablemente mis habilidades de programación en este campo. Este aprendizaje ha sido fundamental para mi crecimiento como desarrollador Front-End, y estoy entusiasmado por seguir explorando y aplicando estas habilidades en futuros proyectos. 
+                        </p>
+                    </div>
+                    <div id="botonReflexion" class="botonReflexion">
+                        <a href="/PORTAFOLIO/0001/reflexion.html#semana4">
+                            <button id="botonVerMas" class="botonVerMas">
+                                Ver más >>
+                            </button>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="item izq">
+                        <div id="semana5" class="semana5">
+                        <span class="Comentario">Semana 5: </span>
+                       <p>
+                        Durante mi experiencia de desarrollo de la aplicación FrontEnd con un Framework JS, pude apreciar la relevancia de comprender a fondo la estructura y funcionamiento de dicho framework. Esta comprensión fue fundamental para lograr una implementación eficaz. La administración de dependencias y las herramientas de creación de proyectos simplificaron en gran medida la configuración inicial, lo que facilitó el proceso.
+                        <br><br>A lo largo de este proyecto, adquirí un valioso conocimiento sobre el desarrollo orientado a componentes utilizando JSX, PROPS y CHILDREN. Este enfoque no solo simplificó la creación de interfaces de usuario dinámicas, sino que también permitió la reutilización de componentes de manera eficiente. Además, la elección y utilización de estilos desempeñaron un papel esencial en la apariencia general de la aplicación. Desde estilos en línea hasta la implementación de componentes de estilo y marcos CSS, cada decisión de estilo tuvo un impacto significativo en la estética y usabilidad de la aplicación.
+                       </p>
+                    </div>
+                    <div id="botonReflexion" class="botonReflexion">
+                        <a href="/PORTAFOLIO/0001/reflexion.html#semana5">
+                            <button id="botonVerMas" class="botonVerMas">
+                                Ver más >>
+                            </button>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="item izq">
+                        <div id="semana6" class="semana6">
+                        <span class="Comentario">Semana 6: </span>
+                        <p>
+                            Durante mi travesía en este aprendizaje, consolidé mi comprensión de cómo crear aplicaciones mediante el uso de eventos, condicionales y bucles en un marco de trabajo de JavaScript. 
+                            Esta inmersión me proporcionó una valiosa percepción sobre la relevancia de mantener una estructura de código bien organizada y modular. 
+                            Practicar con eventos y condicionales en el proceso de renderizado me permitió forjar aplicaciones que se volvían más ágiles y ávidas de respuestas.
+                            <br>La importancia de mantener una estructura de código organizada y modular se vuelve evidente a medida que se avanza en proyectos más grandes y complejos. Esto no solo mejora la legibilidad del código, sino que también simplifica la tarea de mantenimiento a largo plazo.
+                            <br>El renderizado condicional es una técnica valiosa para adaptar la interfaz de usuario a diferentes situaciones, lo que resulta en aplicaciones más receptivas y versátiles. En última instancia, el objetivo es crear aplicaciones que sean capaces de responder de manera eficaz a las necesidades de los usuarios, lo cual requiere un conocimiento sólido de estos conceptos y su aplicación en el desarrollo de software.
+                        </p>
+                    </div>
+                    <div id="botonReflexion" class="botonReflexion">
+                        <a href="/PORTAFOLIO/0001/reflexion.html#semana6">
+                            <button id="botonVerMas" class="botonVerMas">
+                                Ver más >>
+                            </button>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="item izq">
+                        <div id="semana7" class="semana7">
+                        <span class="Comentario">Semana 7: </span>
+                        <p>
+                            Tras estudiar y explorar en profundidad los diversos Hooks de React, incluyendo `useState`, `useEffect`, `useContext`, `useRef`, `useReducer`, `useCallback` y `useMemo`, he llegado a una conclusión clara. Estos Hooks ofrecen una valiosa herramienta para mejorar la gestión de estados y efectos en componentes funcionales en el desarrollo de aplicaciones. Proporcionan una forma más eficiente y organizada de trabajar con React, lo que facilita la creación de aplicaciones robustas y mantenibles. Estos conceptos y técnicas son esenciales para cualquier desarrollador que desee aprovechar al máximo el potencial de React y mejorar la calidad de su código.
+                        </p>
+                    </div>
+                    <div id="botonReflexion" class="botonReflexion">
+                        <a href="/PORTAFOLIO/0001/reflexion.html#semana7">
+                            <button id="botonVerMas" class="botonVerMas">
+                                Ver más >>
+                            </button>
+                        </a>
+                    </div>
+                    </div>
+
+
+                </div>   
+                <div class="Col derecho">
+                    <h3>Unidad 2</h3>
+                    <div class="item der">
+                        <div id="semana1" class="semana1">
+                        <span class="Comentario">Semana 8</span>
+                        <p>
+
+                        </p>
+                    </div>
+                    </div>
+                    <div class="item der">
+                        <div id="semana1" class="semana1">
+                        <span class="Comentario">Semana 8</span>
+                        <p>
+
+                        </p>
+                    </div>
+                    </div>
+                    <div class="item der">
+                        <div id="semana1" class="semana1">
+                        <span class="Comentario">Semana 9</span>
+                        <p>
+
+                        </p>
+                    </div>
+                    </div>
+                    <div class="item der">
+                        <div id="semana1" class="semana1">
+                        <span class="Comentario">Semana 10</span>
+                        <p>
+
+                        </p>
+                    </div>
+                    </div>
+                    <div class="item der">
+                        <div id="semana1" class="semana1">
+                        <span class="Comentario">Semana 12</span>
+                        <p>
+
+                        </p>
+                    </div>
+                    </div>
+                    <div class="item der">
+                        <div id="semana1" class="semana1">
+                        <span class="Comentario">Semana 13</span>
+                        <p>
+
+                        </p>
+                    </div>
+                    </div>
+                    <div class="item der">
+                        <div id="semana1" class="semana1">
+                        <span class="Comentario">Semana 14</span>
+                        <p>
+
+                        </p>
+                    </div>
+                    </div>
+                                    
+                </div>
+            </div>
+        </div>
+        
+    </section>  
+     
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion-01.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Perú 191,Psje. Fidel Coz Poma
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                +51 918405247
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                e_2019200661k@uncp.edu.pe
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+            
+        </div>
+        <a href="#portada" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=100089375895260&mibextid=b06tZ0"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/OsorioJc-696"><i class="fa-brands fa-github"></i>
+                <a href="https://myaccount.microsoft.com/?ref=MeControl"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="https://www.linkedin.com/in/jose-jhunior-osorio-cayetano-38335928a"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
