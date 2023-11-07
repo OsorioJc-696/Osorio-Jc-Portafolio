@@ -932,40 +932,11 @@ footer{
    display: flex;
     background-color: #21c798;
     color: #fff;
-    padding: 50px 0 30px 0;
+    padding:25px;
     text-align: center;
     position: relative;
-    width: 100%;
     justify-content: center;
-    padding: 20px 50px;
-    height: 100%;
-    flex-direction: column;
 }
-
-footer .wave#wave1 {
-    z-index: 1000;
-    opacity: 1;
-    bottom: 0;
-    animation: animateWave 4s linear infinite;
-}
-
-footer .redes{
-    margin-bottom: 20px;
-}
-footer .redes a{
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff;
-    border-radius: 100%;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 40px 5px;
-    font-size: 20px;
-    transition: .3s;
-}
-
 footer .arriba{
     display: block;
     width: 50px;
@@ -979,6 +950,76 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+.legal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+.legal ul{
+    display: flex;
+    gap: 50px;
+}
+.legal li{
+    list-style:none;
+}
+.legal .fa-brands{
+    font-size: 30px;
+    color: #262626;
+    line-height: 45px;
+    transition: 0.5s;
+}
+.legal a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    text-align: center;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: 0.5s;
+    transition-timing-function: linear;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+.legal a:before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transform: rotate(0deg) skewY(-45deg);
+    transition: 0.5s;
+}
+.legal a:after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transform: rotate(0deg) skewX(-45deg);
+    transition: 0.85s;
+}
+.legal a:hover{
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+.legal li:hover .fa-brands{
+    color: #fff;
+}
+
+.legal li:hover a{
+    background: var(--clr0);
+}
+.legal li:hover a:before{
+    background: var(--clr1);
+}
+.legal li:hover a:after{
+    background: var(--clr2);
 }
 
 /* SECCION RESPONSIVE */
@@ -1135,5 +1176,9 @@ footer .arriba{
     }
     .contacto .fila .col{
         width: 100%;
+    }
+    .legal{
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
