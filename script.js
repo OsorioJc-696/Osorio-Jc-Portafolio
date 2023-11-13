@@ -3,14 +3,31 @@ let menuVisible = false;
 function mostrarOcultarMenu(){
     if(menuVisible){
         document.getElementById("nav").classList ="";
-        menuVisible = false;
-        
+        menuVisible = false;        
     }else{
         document.getElementById("nav").classList ="responsive";
         menuVisible = true;
-        
     }
 }
+
+// MENU Y SUBMENU
+var openSubMenus = document.querySelectorAll('.open_submenu');
+var subMenus = document.querySelectorAll('.submenu');
+
+openSubMenus.forEach(function(openSubMenu, index) {
+    openSubMenu.addEventListener('click', function() {
+        subMenus[index].classList.toggle('show');
+    });
+
+    document.addEventListener('click', function(e) {
+        if(subMenus[index].classList.contains('show') 
+            && !subMenus[index].contains(e.target) 
+            && !openSubMenu.contains(e.target)) {
+                subMenus[index].classList.remove('show');
+            }
+    });
+});
+
 
 function seleccionar(){
     //oculto el menu una vez que selecciono una opcion

@@ -14,27 +14,69 @@
 
     <!-- MENU ENCABEZADO -->
     <section class="contenedor-header">
-        <header>
-            <div id="nav-logo" class="logo">
+        <header >
+            <div class="logo">
                 <img src="img/iconoJc-01.png" alt="">
             </div>
+    
             <nav id="nav">
-                <ul>
-                    <li><a href="#portada" onclick="seleccionar()">PORTADA</a></li>
-                    <li><a href="#inicio" onclick="seleccionar()">INTRODUCIÓN</a></li>
-                    <li><a href="#tablacontenido" onclick="seleccionar()">TABALA DE CONTENIDO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">TRABAJOS REALIZADOS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
+                <div class="menu">
+                    <ul>
+                        <li class="open_submenu">
+                            <a href="#">
+                                INICIO
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="index.html#portada">Portada</a></li>
+                                    <li><a href="index.html#inicio">Introdución</a></li>
+                                    <li><a href="index.html#tablacontenido">Contenido</a></li>
+                                    <li><a href="index.html#sobremi">Sobre Mi</a></li>
+                                    <li><a href="index.html#skills">Mis Habilidades</a></li>
+                                    <li><a href="index.html#portfolio">Trabajos Realizados</a></li>
+                                    <li><a href="index.html#reflexion">Reflexiones</a></li>
+                                    <li><a href="index.html#contacto">Contáctame</a></li>
+                                </ul>
+                            </div>
+                        </li>
+            
+                        <li class="open_submenu">
+                            <a href="#">
+                               TABLA DE CONTENIDOS
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="semana.html#unidad1">Unidad 1</a></li>
+                                    <li><a href="semana.html#unidad2">Unidad 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="open_submenu">
+                            <a href="#">
+                                REFLEXIONES
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="reflexion.html#unidad1">Unidad 1</a></li>
+                                </ul>
+                            </div>
+                        </li>
+        
+                    </ul>
+                </div>
+                
             </nav>
+    
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
+    
         </header>
     </section>
-
+    
     <!-- SECCION PORTADA -->
     <section id="portada" class="portada">
         <div id="particles-js" class="particles-container"></div>
@@ -130,7 +172,7 @@
                             </ul>
                         
                             <div id="botonSemana" class="botonSemana">
-                                <a href="/PORTAFOLIO/0001/semana.html#semana2">
+                                <a href="semana.html#semana2">
                                     <button id="botonVerMas" class="botonVerMas">
                                         Ver más
                                     </button>
@@ -153,7 +195,7 @@
                             </ul>
                         
                             <div id="botonSemana" class="botonSemana">
-                                <a href="/PORTAFOLIO/0001/semana.html#semana3">
+                                <a href="semana.html#semana3">
                                     <button id="botonVerMas" class="botonVerMas">
                                         Ver más
                                     </button>
@@ -181,7 +223,7 @@
                             </ul>
                         
                             <div id="botonSemana" class="botonSemana">
-                                <a href="/PORTAFOLIO/0001/semana.html#semana4">
+                                <a href="semana.html#semana4">
                                     <button id="botonVerMas" class="botonVerMas">
                                         Ver más
                                     </button>
@@ -206,7 +248,7 @@
                             </ul>
                         
                             <div id="botonSemana" class="botonSemana">
-                                <a href="/PORTAFOLIO/0001/semana.html#semana5">
+                                <a href="semana.html#semana5">
                                     <button id="botonVerMas" class="botonVerMas">
                                         Ver más
                                     </button>
@@ -230,7 +272,7 @@
                             </ul>
                         
                             <div id="botonSemana" class="botonSemana">
-                                <a href="/PORTAFOLIO/0001/semana.html#semana6">
+                                <a href="semana.html#semana6">
                                     <button id="botonVerMas" class="botonVerMas">
                                         Ver más
                                     </button>
@@ -253,7 +295,7 @@
                             </ul>
                         
                             <div id="botonSemana" class="botonSemana">
-                                <a href="/PORTAFOLIO/0001/semana.html#semana7">
+                                <a href="semana.html#semana7">
                                     <button id="botonVerMas" class="botonVerMas">
                                         Ver más
                                     </button>
@@ -942,15 +984,10 @@
                     </a>
                 </li>
                 
-                
-
-
-
-
             </ul>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
