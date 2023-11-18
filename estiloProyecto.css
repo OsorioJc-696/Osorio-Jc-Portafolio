@@ -4,7 +4,6 @@
     font-family: 'Work Sans';
     margin: 0;
     padding: 0;
-    /* color: #fff; */
 }
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
@@ -38,6 +37,8 @@ html{
     align-items: center;
     z-index: 99;
 }
+
+
 .nav-responsive{
     background-color: #50D9FF;
     color:#fff;
@@ -51,6 +52,7 @@ html{
     color: #fff;
     transition: .5s;
 } 
+
 header{
     background-color: #0F0F0F;
     width: 100%;
@@ -61,6 +63,8 @@ header{
     align-items: center;
     z-index: 99;
 }
+
+
 header a{
     display: inline-block;
     position: relative;
@@ -123,192 +127,115 @@ nav a i{
     padding: 10px 20px;
 }
 
-.botonReflexion {
-    position: relative;
-    top: 0; /* Fija la sección en la parte superior */
-    left: 0; /* Fija la sección en la parte izquierda */
-    /* Asegura que la sección esté en la capa superior */
-    background-color: #010C25; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 20px 40px;
-    margin-top: 0px;
-    width: 100%; /* Establece el ancho de la sección */
+
+/* carousel */
+.title{
+    margin-top: 100px;
+}
+.title h1{
+    font-size: 40px;
     text-align: center;
+    font-family: 'Righteous', cursive;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.title h2{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color: #03064c;
+    margin-bottom: 20px;
+}
+.title h2 span{
+    color: #04795e;
+}
+.logo-carousel{
+    width: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: 46vh;
     display: flex;
-    justify-content: space-between;
-    font-family: 'Righteous';
-    border:2px dashed #1CB698;
-}
-.imagen{
-    max-width: 30px;
-    border-radius: 10%;
-}
-
-.imagen:hover {
-    transform: scale(1.5);
-    transition: .25s;
-    
-}
-.Semana{
-    text-align: center;
-}
-.columnas {
-    display: flex;
-    justify-content: space-between;
-}
-
-.columna1 {
-    width: 35%; /* Establece el ancho de las columnas */
-    padding: 0 1%; /* Añade un pequeño espacio entre las columnas */
-}
-.columna2 {
-    width: 60%; /* Establece el ancho de las columnas */
-    padding: 0 1%; /* Añade un pequeño espacio entre las columnas */
-}
-
-.botonReflexion a{
-    text-decoration: none;
-    font-size: 16px;
-    padding: 5px 10px;
-    border-radius: 50px;
-    background-color: #05cfee;
-    border: none;
-}
-
-.botonReflexion .botonRegresar {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px 10px;
-    transition: .3s;
-    font-weight: bold;
-}
-
-.botonReflexion a:hover{
-    background: #1CB698;
-    color: #000;
-    transition: .3s;
-} 
-
-.reflexion{ 
-    color: #000;
-    padding: 35px 30px;
-    position: relative;
-    background-color: #010C25;
-    margin-top: 80px;
-}
-
-.reflexion .contenido-seccion{
-    max-width: auto;
-    margin: auto;  
-}
-
-
-.reflexion h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 5px 0;
-    text-shadow: 2px 2px 12px #1CB698, -6px -6px 12px #05cfee;
-
-}
-
-.reflexion ul{
-    padding: 0px;
-    margin-left: 15px;
     justify-content: center;
     align-items: center;
-}
-
-.reflexion h3{
-    font-size: 38px;
-    font-family: 'Righteous';
-    margin: 25px;
-    text-align: center;
-    border: 1px solid #05cfee;
-    border-radius: 15px;
-}
-
-.reflexion  h4{
-    color: #05cfee;
-    font-size: 20px;
-    margin: 15px 0 0 0;
-}
-.reflexion .Semana{
-    color: #1CB698;
-    font-size: 38px;
-    font-weight: bold;
-    display: block;
-    margin-top: 30px;
-    text-align: center;
-}
-.reflexion .semana1, .semana2, .semana3, .semana4, .semana5, .semana6, .semana7, .semana8, .semana9, .semana10, .semana11, .semana12{
-    border: 1px solid #1CB698;
-    margin-top: 35px;
-    border-radius: 15px;
-    padding: 0 10px 10px 20px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
     position: relative;
-    background-color: #0a1128;
-    box-shadow: 0 0 10px #05cfee;
-    transition: .3s;
-
 }
 
-
-.reflexion  p{
-    line-height: 24px;
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-200% * 4));
+    }   
 }
 
-.reflexion  p span{
-    font-weight: bold;
-}
-
-.reflexion::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.logo-wrapper{
     width: 100%;
-    height: 20px; /* Altura del separador */
-    background: linear-gradient(to right, #1CB698, transparent); /* Cambia los colores según tus preferencias */
-    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    list-style: none;
+    padding: 0;
+    animation: slide 53s linear infinite;
 }
-
-.reflexion::after {
-    content: "";
-    position: absolute;
-    bottom: 20px; /* Ajusta la distancia entre las olas */
-    left: 0;
-    width: 100%;
-    height: 20px; /* Altura del separador */
-    background: linear-gradient(to right, transparent, #1CB698); /* Cambia los colores según tus preferencias */
-    z-index: 1;
-}
- @media screen and (max-width:700px) {
-    .columnas {
-        flex-direction: column; /* Cambia la dirección de las columnas a una sola columna */
-    }
-
-    .columna1, .columna2 {
-        width: 100%; /* Establece el ancho al 100% para ocupar toda la pantalla */
-        padding: 0; /* Elimina el espacio entre las columnas */
-    }
-    .legal{
-        display: flex;
-        flex-direction: row-reverse;
-    }
+.logo-item {
+    width: 500px;
+    height: 100%;
+    flex-shrink: 0;
     
- }
+}
+.logo-item  img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: brightness(1);
+}
+.logo-item img:hover{
+    transform: scale(1.3);
+}
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
 
- 
- footer{
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+    nav.responsive ul li a{
+        font-size: 12px;
+    }
+}
+
+/* SECCION FOOTER */
+
+footer{
     display: flex;
      background-color: #21c798;
      color: #fff;
-     padding:25px;
+     padding:20px;
      text-align: center;
      position: relative;
      justify-content: center;
+     
  }
  footer .arriba{
      display: block;
@@ -325,9 +252,10 @@ nav a i{
      font-size: 18px;
  }
  .legal{
-     display: flex;
+     /* display: flex;
+     
      justify-content: center;
-     align-items: center;
+     align-items: center; */
      margin: 25px;
  }
  .legal ul{

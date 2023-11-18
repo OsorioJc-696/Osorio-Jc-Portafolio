@@ -9,25 +9,73 @@
     <link rel="stylesheet" href="estiloReflexion.css">
 </head>
 <body>
-    <section id="botonReflexion" class="botonReflexion">
 
-        <a href="index.html#reflexion">
-            <button id="botonRegresar" class="botonRegresar">
-                <i class="fas fa-angle-double-right fa-rotate-180"></i> Regresar
-            </button>
-        </a>
-        <div  class="imagenSeccion">
-            <img  class="imagen" src="img/icono-02.png" alt="">
-        </div>
+    <!-- NAVEGACIÓN -->
+    <section class="contenedor-header">
+        <header >
+            <div class="logo">
+                <img src="img/iconoJc-01.png" alt="">
+            </div>
+    
+            <nav id="nav">
+                <div class="menu">
+                    <ul>
+                        <li class="open_submenu">
+                            <a href="#">
+                                INICIO
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="index.html#portada">Portada</a></li>
+                                    <li><a href="index.html#inicio">Introdución</a></li>
+                                    <li><a href="index.html#tablacontenido">Contenido</a></li>
+                                    <li><a href="index.html#sobremi">Sobre Mi</a></li>
+                                    <li><a href="index.html#skills">Mis Habilidades</a></li>
+                                    <li><a href="index.html#portfolio">Trabajos Realizados</a></li>
+                                    <li><a href="index.html#reflexion">Reflexiones</a></li>
+                                    <li><a href="index.html#contacto">Contáctame</a></li>
+                                </ul>
+                            </div>
+                        </li>
+            
+                        <li class="open_submenu">
+                            <a href="#">
+                               TABLA DE CONTENIDOS
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="semana.html#unidad1">Unidad 1</a></li>
+                                    <li><a href="semana.html#unidad2">Unidad 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="open_submenu">
+                            <a href="#">
+                                REFLEXIONES
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="reflexion.html#unidad1">Unidad 1</a></li>
+                                </ul>
+                            </div>
+                        </li>
         
-        
-        <a href="index.html#portada">
-            <button id="botonRegresar" class="botonRegresar" >
-                Inicio  <i class="fas fa-angle-double-right"></i>
-            </button>
-        </a>
+                    </ul>
+                </div>
+                
+            </nav>
+    
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    
+        </header>
     </section>
 
+    <!-- REFLEXION -->
     <section id="reflexion" class="reflexion">
         <div class="contenido-seccion">
             <h2>Reflexiones Semanales</h2>
@@ -38,7 +86,7 @@
                     <span class="Semana">Semana 1 </span>
                     <div class="columnas">
                         <div class="columna1">
-                            <h4>Reflexion</h4>
+                            <h4>Reflexión</h4>
                             <p>
                                 Obtuve habilidades sólidas en la implementación de Hooks durante el Laboratorio 01A, donde exploré los cimientos esenciales de las tecnologías web y el funcionamiento de Internet. Fuí capaz de comprender la trascendental importancia del Sistema de Nombres de Dominio (DNS) y su rol en la traducción de nombres a direcciones IP. Además, adquirí conocimientos sobre el funcionamiento de los protocolos TCP/IP y HTTP, los cuales son vitales para la comunicación en la red.
                                 <br><br>Adicionalmente, me familiariceé con los frameworks y las herramientas de atajos (como Emmet y los snippets) en VSCode, reconociéndolos como recursos poderosos que tienen el potencial de optimizar significativamente la velocidad, la eficiencia y la calidad en el desarrollo web. Los frameworks brindan estructura y funcionalidad, mientras que las utilidades de atajos y snippets simplifican la creación de código y reducen la labor repetitiva. La elección de las herramientas adecuadas depende tanto de las preferencias individuales como de los requerimientos específicos del proyecto.
@@ -63,7 +111,7 @@
                     <span class="Semana">Semana 2</span>      
                     <div class="columnas">
                         <div class="columna1">
-                    <h4>Reflexion</h4>
+                    <h4>Reflexión</h4>
                     <p>
                         Durante la semana pasada, me sumergí en los conceptos esenciales relacionados con la creación de sitios web utilizando HTML, XML y CSS, y también exploré las prácticas recomendadas en el ámbito de la Plataforma Web Abierta. A lo largo de esta experiencia, llegué a comprender en detalle cómo funcionaba la estructura de un sitio web. 
                         <br><br>Desde la creación de etiquetas HTML5 hasta la optimización para motores de búsqueda, pude apreciar la importancia de estos aspectos. El conocimiento sobre el Árbol DOM y el ciclo de vida de una página web se volvió claro, ya que tienen un impacto directo en la experiencia del usuario. Además, adquirí información sobre la importancia de asegurarse de que un sitio web funcione correctamente en diversos navegadores y entornos.
@@ -88,7 +136,7 @@
                     <span class="Semana">Semana 3 </span>      
                     <div class="columnas">
                         <div class="columna1">
-                            <h4>Reflexion</h4>
+                            <h4>Reflexión</h4>
                             <p>
                                 A lo largo del curso, experimenté un enriquecedor proceso de aprendizaje al desarrollar páginas web Front-End con librerías de CSS como Bootstrap y Tailwind. 
                                 <br>Adquirí una comprensión más profunda de cómo diseñar interfaces de usuario atractivas y funcionales. 
@@ -118,7 +166,7 @@
                     <div class="columnas">
                         <div class="columna1">    
                     
-                    <h4>Reflexion</h4>
+                    <h4>Reflexión</h4>
                     <p>
                         Tras mi aprendizaje acerca del desarrollo Front-End con Javascript, he llegado a la conclusión de que este proceso ha sido altamente enriquecedor. He adquirido un profundo conocimiento sobre la versatilidad y potencia de este lenguaje de programación. Comprender los motores de Javascript, las variables y operadores, así como la manipulación efectiva de datos, me ha proporcionado una base sólida para el desarrollo Front-End. Además, el manejo de tipos de datos como números, strings y objetos ha ampliado considerablemente mis habilidades de programación en este campo. Este aprendizaje ha sido fundamental para mi crecimiento como desarrollador Front-End, y estoy entusiasmado por seguir explorando y aplicando estas habilidades en futuros proyectos. 
                     </p>
@@ -144,7 +192,7 @@
                     <div class="columnas">
                         <div class="columna1">     
                     
-                    <h4>Reflexion</h4>
+                    <h4>Reflexión</h4>
                     <p>
                         Durante mi experiencia de desarrollo de la aplicación FrontEnd con un Framework JS, pude apreciar la relevancia de comprender a fondo la estructura y funcionamiento de dicho framework. Esta comprensión fue fundamental para lograr una implementación eficaz. La administración de dependencias y las herramientas de creación de proyectos simplificaron en gran medida la configuración inicial, lo que facilitó el proceso.
                         <br><br>A lo largo de este proyecto, adquirí un valioso conocimiento sobre el desarrollo orientado a componentes utilizando JSX, PROPS y CHILDREN. Este enfoque no solo simplificó la creación de interfaces de usuario dinámicas, sino que también permitió la reutilización de componentes de manera eficiente. Además, la elección y utilización de estilos desempeñaron un papel esencial en la apariencia general de la aplicación. Desde estilos en línea hasta la implementación de componentes de estilo y marcos CSS, cada decisión de estilo tuvo un impacto significativo en la estética y usabilidad de la aplicación.
@@ -170,7 +218,7 @@
                     <div class="columnas">
                         <div class="columna1">
                     
-                    <h4>Reflexion</h4>
+                    <h4>Reflexión</h4>
                     <p>
                         Durante mi travesía en este aprendizaje, consolidé mi comprensión de cómo crear aplicaciones mediante el uso de eventos, condicionales y bucles en un marco de trabajo de JavaScript. 
                         Esta inmersión me proporcionó una valiosa percepción sobre la relevancia de mantener una estructura de código bien organizada y modular. 
@@ -202,7 +250,7 @@
                     <div class="columnas">
                         <div class="columna1">    
                     
-                    <h4>Reflexion</h4>
+                    <h4>Reflexión</h4>
                     <p>
                         Tras estudiar y explorar en profundidad los diversos Hooks de React, incluyendo `useState`, `useEffect`, `useContext`, `useRef`, `useReducer`, `useCallback` y `useMemo`, he llegado a una conclusión clara. Estos Hooks ofrecen una valiosa herramienta para mejorar la gestión de estados y efectos en componentes funcionales en el desarrollo de aplicaciones. Proporcionan una forma más eficiente y organizada de trabajar con React, lo que facilita la creación de aplicaciones robustas y mantenibles. Estos conceptos y técnicas son esenciales para cualquier desarrollador que desee aprovechar al máximo el potencial de React y mejorar la calidad de su código.
                     </p>
@@ -225,7 +273,7 @@
                 <span class="Semana">Semana 8 </span>
                 <div class="columnas">
                     <div class="columna1">
-                        <h4>Reflexion</h4>
+                        <h4>Reflexión</h4>
                         <p>
                             Obtuve habilidades sólidas en la implementación de Hooks durante el Laboratorio 01A, donde exploré los cimientos esenciales de las tecnologías web y el funcionamiento de Internet. Fuí capaz de comprender la trascendental importancia del Sistema de Nombres de Dominio (DNS) y su rol en la traducción de nombres a direcciones IP. Además, adquirí conocimientos sobre el funcionamiento de los protocolos TCP/IP y HTTP, los cuales son vitales para la comunicación en la red.
                             <br><br>Adicionalmente, me familiariceé con los frameworks y las herramientas de atajos (como Emmet y los snippets) en VSCode, reconociéndolos como recursos poderosos que tienen el potencial de optimizar significativamente la velocidad, la eficiencia y la calidad en el desarrollo web. Los frameworks brindan estructura y funcionalidad, mientras que las utilidades de atajos y snippets simplifican la creación de código y reducen la labor repetitiva. La elección de las herramientas adecuadas depende tanto de las preferencias individuales como de los requerimientos específicos del proyecto.
@@ -250,7 +298,25 @@
         </div>
 
     </section>
+    <section id="botonReflexion" class="botonReflexion">
 
+        <a href="index.html#reflexion">
+            <button id="botonRegresar" class="botonRegresar">
+                <i class="fas fa-angle-double-right fa-rotate-180"></i> 
+                Anterior
+            </button>
+        </a>
+        <div  class="imagenSeccion">
+            <img  class="imagen" src="img/icono-02.png" alt="">
+        </div>
+        
+        
+        <a href="index.html#portada">
+            <button id="botonRegresar" class="botonRegresar" >
+                Siguiente  <i class="fas fa-angle-double-right"></i>
+            </button>
+        </a>
+    </section>
     <!-- footer -->
     <footer>
         
