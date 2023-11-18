@@ -224,5 +224,3 @@ document.addEventListener("DOMContentLoaded", function () {
       section.addEventListener("mouseout", resumeScrollOnMouseOut);
   });
 });
-
-
