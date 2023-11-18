@@ -972,13 +972,19 @@ nav a i{
 .contacto button:hover .overlay{
     width: 100%;
 }
+.contacto .col{
+    position: relative;
+}
 .contacto .col img{
+    padding-top: 5%;
     width: 100%;
 }
 .contacto .col .info{
-    position: absolute;
+    position: relative;
     top: 40%;
-    background-color: #252A2E;
+    background-color: #252a2e90;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
     padding: 20px;
     max-width: 350px;
     left: 50%;
@@ -1123,7 +1129,7 @@ footer .arriba{
 @media screen and (max-width:700px){
     .portada .contenido-banner{
         max-width: 370px;
-        margin-top: 60%;
+        margin-top: 65%;
         border-radius: 5%;
     }
     .portada .contenido-banner h1{
@@ -1239,14 +1245,13 @@ footer .arriba{
     }
 
     /* CONTACTO */
+    
     .contacto .fila{
         display: block;
     }
     .contacto .fila .col{
         width: 100%;
+        height: auto;
     }
-    .legal{
-        display: flex;
-        flex-direction: row-reverse;
-    }
+    
 }
