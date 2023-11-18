@@ -284,6 +284,34 @@ nav a i{
     background: linear-gradient(to right, transparent, #1CB698); /* Cambia los colores según tus preferencias */
     z-index: 1;
 }
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+    nav.responsive ul li a{
+        font-size: 12px;
+    }
+}
  @media screen and (max-width:700px) {
     .columnas {
         flex-direction: column; /* Cambia la dirección de las columnas a una sola columna */
@@ -292,6 +320,36 @@ nav a i{
     .columna1, .columna2 {
         width: 100%; /* Establece el ancho al 100% para ocupar toda la pantalla */
         padding: 0; /* Elimina el espacio entre las columnas */
+    }
+    
+    .legal ul{
+        display: flex;
+        gap: 20px;
+    }
+    .legal .fa-brands{
+        font-size: 15px;
+    }
+    .legal a{
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    .legal a:before{
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -20px;
+        height: 100%;
+        width: 20px;
+    }
+    .legal a:after{
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: -10px;
+        height: 20px;
+        width: 100%;
     }
     .legal{
         display: flex;
@@ -309,6 +367,7 @@ nav a i{
      text-align: center;
      position: relative;
      justify-content: center;
+     min-width: 100vw;
  }
  footer .arriba{
      display: block;

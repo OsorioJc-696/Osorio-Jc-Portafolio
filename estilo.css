@@ -915,6 +915,7 @@ nav a i{
     background-color: #1e2326;
     color: #fff;
     padding: 50px 0;
+    position: relative;
 }
 .contacto .contenido-seccion{
     max-width: 1100px;
