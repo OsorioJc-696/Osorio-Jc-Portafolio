@@ -357,6 +357,7 @@ nav a i{
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .sobremi .fila .col .contenedor-intereses .interes{
     width: 100px;
@@ -368,9 +369,12 @@ nav a i{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     transition: .3s;
+
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
     background-color: #1CB698;
+    color: #04324d;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
@@ -389,6 +393,15 @@ nav a i{
     position: relative;
     z-index: 8;
 }
+.sobremi button a{
+    color: #fff;
+    text-decoration: none;
+}
+.sobremi button a:hover{
+    color: #000000;
+    font-weight: bold;
+    text-shadow: #ffffff 2px 2px 12px;
+}
 .sobremi button .overlay{
     position: absolute;
     top: 0;
@@ -401,7 +414,9 @@ nav a i{
 }
 .sobremi button:hover .overlay{
     width: 100%;
+    background-color: #04324d;
 }
+
 
 /* SECCION SKILLS */
 .skills{
@@ -759,11 +774,11 @@ nav a i{
     height: fit-content;
     margin: 10px;
     cursor: pointer;
-    
 }
 .portfolio .galeria .proyecto img{
     width: 100%;
     display: block;
+    border-radius: 3%;
 }
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
@@ -779,6 +794,7 @@ nav a i{
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
+    border-radius: 3%;
 }
 .portfolio .galeria .proyecto .overlay h3{
     margin-bottom: 20px;
