@@ -4,8 +4,9 @@
     font-family: 'Work Sans';
     margin: 0;
     padding: 0;
-    /* color: #fff; */
+    color: #fff;
 }
+
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
@@ -196,14 +197,12 @@ nav a i{
     position: relative;
     background-color: #010C25;
     margin-top: 80px;
+    padding-bottom: 80px;
 }
-
 .reflexion .contenido-seccion{
     max-width: auto;
     margin: auto;  
 }
-
-
 .reflexion h2{
     font-size: 48px;
     font-family: 'Righteous';
@@ -212,14 +211,12 @@ nav a i{
     text-shadow: 2px 2px 12px #1CB698, -6px -6px 12px #05cfee;
 
 }
-
 .reflexion ul{
     padding: 0px;
     margin-left: 15px;
     justify-content: center;
     align-items: center;
 }
-
 .reflexion h3{
     font-size: 38px;
     font-family: 'Righteous';
@@ -228,7 +225,6 @@ nav a i{
     border: 1px solid #05cfee;
     border-radius: 15px;
 }
-
 .reflexion  h4{
     color: #05cfee;
     font-size: 20px;
@@ -253,16 +249,12 @@ nav a i{
     transition: .3s;
 
 }
-
-
 .reflexion  p{
     line-height: 24px;
 }
-
 .reflexion  p span{
     font-weight: bold;
 }
-
 .reflexion::before {
     content: "";
     position: absolute;
@@ -322,11 +314,11 @@ nav a i{
         padding: 0; /* Elimina el espacio entre las columnas */
     }
     
-    .legal ul{
+    /* .legal ul{
         display: flex;
         gap: 20px;
-    }
-    .legal .fa-brands{
+    } */
+    /* .legal .fa-brands{
         font-size: 15px;
     }
     .legal a{
@@ -350,7 +342,7 @@ nav a i{
         left: -10px;
         height: 20px;
         width: 100%;
-    }
+    } */
     .legal{
         display: flex;
         flex-direction: row-reverse;
@@ -367,7 +359,6 @@ nav a i{
      text-align: center;
      position: relative;
      justify-content: center;
-     min-width: 100vw;
  }
  footer .arriba{
      display: block;
