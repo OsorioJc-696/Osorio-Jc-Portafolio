@@ -197,7 +197,27 @@ nav a i{
 }
 .portada .contenido-banner h2{
     font-size: 15px;
-    font-weight: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg,
+     #0a1128, #fff, #0a1128);
+     background-repeat: no-repeat;
+     background-size: 80%;
+     animation: animate 4s linear infinite ;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: 
+        rgba(6, 177, 196, 0)
+}
+
+@keyframes animate{
+    0%{
+        background-position: -400%;
+    }
+    100%{
+        background-position: 400%;
+    }
 }
 .portada .contenido-banner .redes a{
     color: #fff;
