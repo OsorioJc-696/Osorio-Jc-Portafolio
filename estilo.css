@@ -820,6 +820,16 @@ nav a i{
     margin-bottom: 20px;
     transition: 1.5s;
 }
+.portfolio .galeria .proyecto .overlay a{
+    text-decoration: none;
+    background-color: #05cfee;
+    border: 2px solid #0a1128;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline;
+    text-align: center;
+    width: 100px;
+}
 .portfolio .galeria .proyecto .overlay:hover{
     opacity: 1;
 }
