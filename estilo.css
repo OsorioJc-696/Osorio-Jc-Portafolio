@@ -60,7 +60,7 @@ header{
     min-height: 80px;
     box-shadow: 4px 0px 20px 0px rgba(0,0,0,0.2);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     z-index: 99;
 }
@@ -100,6 +100,7 @@ nav a i{
     margin-left: 10px;
     
 }
+
 .submenu{
     position: absolute;
     top: 100%;
@@ -122,6 +123,7 @@ nav a i{
     position:relative;
     display: block;
     width: 100%;
+    
 }
 .submenu ul li a{
     width: 100%;
@@ -136,7 +138,7 @@ nav a i{
     height: 100vh;
     color: #fff;
     display: flex;
-    align-items: center;
+    justify-content: center;
     position: relative;
     overflow: hidden;
 }
@@ -149,15 +151,18 @@ nav a i{
     z-index: 0;
 }
 .portada .contenido-banner{
-    position: relative;
+    position: absolute;
     z-index: 1;
-    padding: 20px;
+    height: auto;
+    display: flex;
+    margin-top: 130px;
+    justify-content: center;
     background-color: #04324d;
+    width: auto;
     max-width: 500px;
-    margin: auto;
+    padding: 20px;
     text-align: center;
-    margin-top: 9em;
-    border-radius: 5%;
+    border-radius: 8%;
     box-shadow: 0 0 10px #000000;
 }
 .portada .contenido-banner:hover {
@@ -246,9 +251,6 @@ nav a i{
     background-position: center;
     height: auto;
     color: #fff;
-    display: flex;
-    align-items: center;
-    display: grid;
     width: 100%;
     padding: 5px 35px;
     text-align: center;
@@ -323,6 +325,7 @@ nav a i{
     background-color: #1e2326;
     color: #fff;
     padding: 1px 20px;
+    margin-top: 80px;
 }
 .sobremi .contenido-seccion{
     max-width: 1100px;
@@ -333,7 +336,7 @@ nav a i{
     font-family: 'Righteous';
     text-align: center;
     padding: 0;
-    margin-top: 20px;
+    margin: 30px 0;
 
 }
 .sobremi .contenido-seccion p{
@@ -612,6 +615,7 @@ nav a i{
 .tablacontenido .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+    margin-top: 40px;
     
 }
 .tablacontenido h2{
@@ -629,10 +633,12 @@ nav a i{
     width: 49%;
     padding: 0 20px;
 }
-.tablacontenido .fila .col h3{
-    font-size: 28px;
+.tablacontenido  h3{
+    font-size: 48px;
     font-family: 'Righteous';
     margin-bottom: 25px;
+    text-align: center;
+    text-shadow: #04324d 2px 2px 12px;
 }
 .tablacontenido .fila .izquierda{
     border-right: 2px solid #252A2E;
@@ -750,7 +756,7 @@ nav a i{
 }
 .botonSemana .botonVerMas:hover {
    
-    background-color: #0a1128;
+    background-color: #004E7C;
     
     border: 2px solid #1CB698;
 }
@@ -765,42 +771,47 @@ nav a i{
 
 /* SECCION PORTFOLIO */
 .portfolio{
-    background-color: #252A2E;
+    background-color: #004E7C;
     color: #fff;
     padding: 50px 20px;
-    
 }
-.portfolio .contenido-seccion{
+.portfolio2{
+    background-color: #021841;
+    color: #fff;
+    padding: 50px 20px;
+}
+.portfolio .contenido-seccion,.portfolio2 .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+    margin-top: 40px;
     
     
 }
-.portfolio h2{
+.portfolio h2, .portfolio2 h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.portfolio .galeria{
+.portfolio .galeria, .portfolio2 .galeria{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     
 }
-.portfolio .galeria .proyecto{
+.portfolio .galeria .proyecto, .portfolio2 .galeria .proyecto{
     position: relative;
     max-width: 340px;
     height: fit-content;
     margin: 10px;
     cursor: pointer;
 }
-.portfolio .galeria .proyecto img{
+.portfolio .galeria .proyecto img, .portfolio2 .galeria .proyecto img{
     width: 100%;
     display: block;
     border-radius: 3%;
 }
-.portfolio .galeria .proyecto .overlay{
+.portfolio .galeria .proyecto .overlay, .portfolio2 .galeria .proyecto .overlay{
     position: absolute;
     top: 0;
     width: 100%;
@@ -816,11 +827,11 @@ nav a i{
     opacity: 0;
     border-radius: 3%;
 }
-.portfolio .galeria .proyecto .overlay h3{
+.portfolio .galeria .proyecto .overlay h3, .portfolio2 .galeria .proyecto .overlay h3{
     margin-bottom: 20px;
     transition: 1.5s;
 }
-.portfolio .galeria .proyecto .overlay a{
+.portfolio .galeria .proyecto .overlay a, .portfolio2 .galeria .proyecto .overlay a{
     text-decoration: none;
     background-color: #05cfee;
     border: 2px solid #0a1128;
@@ -830,15 +841,12 @@ nav a i{
     text-align: center;
     width: 100px;
 }
-.portfolio .galeria .proyecto .overlay:hover{
+.portfolio .galeria .proyecto .overlay:hover, .portfolio2 .galeria .proyecto .overlay:hover{
     opacity: 1;
 }
-.portfolio .galeria .proyecto .overlay:hover h3{
+.portfolio .galeria .proyecto .overlay:hover h3, .portfolio2 .galeria .proyecto .overlay:hover h3{
     margin-bottom: 0px;
 }
-
-/* SECCION CONCLUSIONES */
-
 
 /* SECCION REFLEXIONES */
 .reflexion{
@@ -846,12 +854,11 @@ nav a i{
     color: #000;
     padding: 50px 20px;
     position: relative;
-    
 }
 .reflexion .contenido-seccion{
     max-width: 1100px;
     margin: auto;
-    
+    margin-top: 40px;
 }
 .reflexion h2{
     font-size: 48px;
@@ -868,11 +875,12 @@ nav a i{
     width: 49%;
     padding: 0 20px;
 }
-.reflexion .fila-reflex .Col h3{
-    font-size: 28px;
+.reflexion  h3{
+    font-size: 40px;
     font-family: 'Righteous';
     margin-bottom: 25px;
-    color: #fff;
+    text-shadow: 2px 2px 12px #fff, -6px -6px 12px #05cfee;
+
     text-align: center;
 }
 .reflexion .fila-reflex .izquierdo{
@@ -1186,7 +1194,7 @@ footer .arriba{
 @media screen and (max-width:700px){
     .portada .contenido-banner{
         max-width: 370px;
-        margin-top: 65%;
+        margin-top: 200px;
         border-radius: 5%;
     }
     .portada .contenido-banner h1{
@@ -1290,14 +1298,14 @@ footer .arriba{
     }
 
     /* PORTAFOLIO */
-    .portfolio .galeria{
+    .portfolio .galeria, .portfolio2 .galeria{
         display: block;
         width: 100%;
     }
-    .portfolio .galeria .proyecto{
+    .portfolio .galeria .proyecto,.portfolio2 .galeria .proyecto{
         max-width: 100%;
     }
-    .portfolio .galeria .proyecto img{
+    .portfolio .galeria .proyecto img, .portfolio2 .galeria .proyecto img{
         width: 100%;
     }
 

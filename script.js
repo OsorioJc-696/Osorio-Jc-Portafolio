@@ -9,6 +9,7 @@ function mostrarOcultarMenu(){
         menuVisible = true;
     }
 }
+// NAV Y FOOTER
 
 // MENU Y SUBMENU
 var openSubMenus = document.querySelectorAll('.open_submenu');

@@ -230,8 +230,8 @@ nav a i{
     align-items: center;
 }
 
-.tablacontenido h3{
-    font-size: 38px;
+.tablacontenido .contenido-seccion h3{
+    font-size: 48px;
     font-family: 'Righteous';
     margin: 25px;
     text-align: center;
